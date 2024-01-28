@@ -25,11 +25,9 @@ header {
 }
 
 header h1 {
-  /* color: */
   padding: 25px 0px;
   font-family: "Roboto Slab", serif;
   color: white;
-  /* font-size: 20px; */
 }
 
 #small-text {
@@ -147,7 +145,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   cursor: not-allowed;
 }
 
