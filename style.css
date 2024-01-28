@@ -159,6 +159,7 @@ header h1 {
 marquee {
   margin-top: 10vh;
   font-size: 2rem;
+  padding-bottom: 1000vh;
 }
 
 marquee a {
