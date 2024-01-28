@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  overflow: hidden;
+}
+
+header {
+  background-color: #7d83ff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-icons {
+  font-size: 2rem;
+}
+
+header h1 {
+  /* color: */
+  padding: 25px 0px;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  /* font-size: 20px; */
+}
+
+#small-text {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+.h1-text {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-family: 50px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  margin-top: 10vh;
+}
+
+.choices #stone {
+  height: 250px;
+  width: 250px;
+  background-image: url("./content/rock.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.computer-choice #computer-stone {
+  height: 50px;
+  width: 50px;
+  background-image: url("./content/rock.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: not-allowed;
+  border: 2px solid black;
+}
+
+.choices #paper {
+  height: 250px;
+  width: 250px;
+  background-image: url("./content/paper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.computer-choice #computer-paper {
+  height: 50px;
+  width: 50px;
+  background-image: url("./content/paper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: not-allowed;
+  border: 2px solid black;
+}
+
+.choices #scissor {
+  height: 250px;
+  width: 250px;
+  background-image: url("./content/scissors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.computer-choice #computer-scissor {
+  height: 50px;
+  width: 50px;
+  background-image: url("./content/scissors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: not-allowed;
+  border: 2px solid black;
+}
+
+.computer-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  gap: 2vw;
+}
+
+.hide {
+  display: none;
+}
+
+#stone:hover,
+#paper:hover,
+#scissor:hover {
+  opacity: 0.7;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 10vh;
+}
+
+.mssg-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  cursor: not-allowed;
+}
+
+#mssg {
+  display: inline;
+  background-color: #d4dcff;
+  padding: 2vh;
+  border-radius: 25px;
+}
+
+marquee {
+  margin-top: 10vh;
+  font-size: 2rem;
+}
+
+marquee a {
+  text-decoration: none;
+  color: #655a7c;
+}
+
+/* CLASS FOR DARK THEME */
+
+.dark-theme {
+  background-color: #655a7c;
+  color: white;
+}

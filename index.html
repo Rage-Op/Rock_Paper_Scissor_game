@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor</title>
+    <link rel="icon" href="./content/icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <button class="nav-button" id="nav-button1">
+        <i class="fa-solid fa-gear nav-icons" style="color: #ffffff"></i>
+      </button>
+      <h1>
+        <span class="h1-text">STONE__PAPER__SCISSOR</span
+        ><span id="small-text">game by Pravin</span>
+      </h1>
+      <button class="nav-button">
+        <i
+          class="fa-regular fa-circle-question nav-icons"
+          style="color: #ffffff"
+        ></i>
+      </button>
+    </header>
+    <main class="dynamic-theme">
+      <div class="computer-choice">
+        <h2>Computer chose:</h2>
+        <div class="computer hide" id="computer-stone"></div>
+        <div class="computer hide" id="computer-paper"></div>
+        <div class="computer hide" id="computer-scissor"></div>
+      </div>
+      <div class="choices">
+        <div class="choice" id="stone"></div>
+        <div class="choice" id="paper"></div>
+        <div class="choice" id="scissor"></div>
+      </div>
+      <div class="score">
+        <h2 class="dynamic-theme">
+          Player: <span id="player-score" class="dynamic-theme">0</span>
+        </h2>
+        <h2 class="dynamic-theme">
+          Computer: <span id="computer-score" class="dynamic-theme">0</span>
+        </h2>
+      </div>
+      <div class="mssg-container">
+        <h2 id="mssg">Play your move</h2>
+      </div>
+      <div class="scroll">
+        <marquee behavior="scroll" direction="left" scrollamount="20"
+          ><a href="pop.html" class="dynamic-theme"
+            >🥳Please give a star to the github repository after enjoying!🥳</a
+          ></marquee
+        >
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
