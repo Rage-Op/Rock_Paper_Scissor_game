@@ -102,21 +102,26 @@ window.onload = function () {
       console.log("computer wins");
       computerDefeatsPlayer = true;
       computerScore += 1;
+      mssg.style.backgroundColor = "#C73E1D";
     } else if (computerDraw == "paper" && chosen == "rock") {
       console.log("computer wins");
       computerDefeatsPlayer = true;
       computerScore += 1;
+      mssg.style.backgroundColor = "#C73E1D";
     } else if (computerDraw == "scissor" && chosen == "paper") {
       console.log("computer wins");
       computerDefeatsPlayer = true;
       computerScore += 1;
+      mssg.style.backgroundColor = "#C73E1D";
     } else if (computerDraw == chosen) {
       gameDraw = true;
+      mssg.style.backgroundColor = "#A2A3BB";
     } else {
       console.log("player wins");
       computerDefeatsPlayer = false;
       playerScore += 1;
       console.log("computerDefeatsPlayer" + computerDefeatsPlayer);
+      mssg.style.backgroundColor = "#78BC61";
       playOnce();
     }
     displayWinner(gameDraw);
