@@ -32,6 +32,20 @@
       </button>
     </header>
     <main class="dynamic-theme">
+      <div class="tutorial hide-tutorial" id="how-to">
+        <div class="tutorial-header">
+          <h2>How to play the game?</h2>
+          <button id="tutorial-header-button">&times;</button>
+        </div>
+        <hr />
+        <p>
+          1.Just click on the move you want to throw and the computer will throw
+          its move at the same time deciding who wins.<br />2.Good luck trying
+          to defeat the AI 👍.<br />3.⚠️Warning! DO NOT CLICK ON THE SCROLLING
+          TEXT⚠️
+        </p>
+      </div>
+      <div class="hide-tutorial" id="overlay"></div>
       <dotlottie-player
         id="SVG-animation"
         src="https://lottie.host/8440f226-eb94-4d2a-b134-140599daa55c/0sgWlaMxpD.json"
@@ -64,7 +78,7 @@
         <h2 id="mssg">Play your move</h2>
       </div>
       <div class="scroll">
-        <marquee behavior="scroll" direction="left" scrollamount="20"
+        <marquee behavior="scroll" direction="left" scrollamount="15"
           ><a href="pop.html" class="dynamic-theme"
             >🥳Please give a star to the github repository after
             enjoying!🥳⚠️Warning! DO NOT CLICK ON ME!⚠️</a

@@ -13,6 +13,10 @@ window.onload = function () {
   let cScissor = document.querySelector("#computer-scissor");
   let dynamicTheme = document.querySelectorAll(".dynamic-theme");
   let themeButton = document.querySelector("#nav-button1");
+  let tutorialButton = document.querySelector("#nav-button2");
+  let howTo = document.querySelector("#how-to");
+  let tutorialHeaderButton = document.querySelector("#tutorial-header-button");
+  let overlay = document.querySelector("#overlay");
   const player = document.querySelector("dotlottie-player");
 
   // For lottie Animation
@@ -32,6 +36,7 @@ window.onload = function () {
   let playerScore = 0;
   let computerScore = 0;
   let isDarkTheme = false;
+  let showTutorial = false;
 
   // Change Theme function
   themeButton.addEventListener("click", () => {
@@ -39,15 +44,36 @@ window.onload = function () {
     if (isDarkTheme == true) {
       dynamicTheme.forEach((toChange) => {
         toChange.classList.add("dark-theme");
+        themeButton.innerHTML =
+          '<i class="fa-solid fa-sun nav-icons" style="color: #ffffff;"></i>';
       });
     } else {
       dynamicTheme.forEach((toChange) => {
         toChange.classList.remove("dark-theme");
+        themeButton.innerHTML =
+          '<i class="fa-solid fa-moon nav-icons" style="color: #ffffff"></i>';
       });
     }
   });
 
-  //   Computer draw generate
+  // Show tutorial button
+  tutorialButton.addEventListener("click", () => {
+    showTutorial == true;
+    howTo.classList.remove("hide-tutorial");
+    overlay.classList.remove("hide-tutorial");
+  });
+  tutorialHeaderButton.addEventListener("click", () => {
+    showTutorial == false;
+    howTo.classList.add("hide-tutorial");
+    overlay.classList.add("hide-tutorial");
+  });
+  overlay.addEventListener("click", () => {
+    showTutorial == false;
+    howTo.classList.add("hide-tutorial");
+    overlay.classList.add("hide-tutorial");
+  });
+
+  // Computer draw generate
   function resultCheck(choice) {
     var chosen = choice;
     gameDraw = false;

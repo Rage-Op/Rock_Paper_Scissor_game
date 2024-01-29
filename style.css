@@ -183,3 +183,41 @@ marquee a {
   z-index: 10;
   pointer-events: none;
 }
+
+.tutorial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d4dcff;
+  padding: 4vw;
+  border-radius: 2vw;
+  border: 2px solid #242c53;
+  z-index: 20;
+}
+
+.hide-tutorial {
+  display: none;
+}
+
+.tutorial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tutorial-header-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
