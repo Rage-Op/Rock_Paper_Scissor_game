@@ -13,6 +13,16 @@ window.onload = function () {
   let cScissor = document.querySelector("#computer-scissor");
   let dynamicTheme = document.querySelectorAll(".dynamic-theme");
   let themeButton = document.querySelector("#nav-button1");
+  const player = document.querySelector("dotlottie-player");
+
+  // For lottie Animation
+  function playOnce() {
+    player.play();
+
+    player.addEventListener("complete", () => {
+      player.stop();
+    });
+  }
 
   // Game logic variables
   let computerDraw = "empty";
@@ -79,6 +89,7 @@ window.onload = function () {
     } else {
       console.log("player wins");
       computerDefeatsPlayer = false;
+      playOnce();
       playerScore += 1;
       console.log("computerDefeatsPlayer" + computerDefeatsPlayer);
     }

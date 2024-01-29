@@ -173,3 +173,13 @@ marquee a {
   background-color: #655a7c;
   color: white;
 }
+
+#SVG-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  pointer-events: none;
+}

@@ -32,6 +32,15 @@
       </button>
     </header>
     <main class="dynamic-theme">
+      <dotlottie-player
+        id="SVG-animation"
+        src="https://lottie.host/8440f226-eb94-4d2a-b134-140599daa55c/0sgWlaMxpD.json"
+        background="transparent"
+        speed="2"
+        style="width: 100vw; height: 100vh"
+        direction="1"
+        playMode="normal"
+      ></dotlottie-player>
       <div class="computer-choice">
         <h2>Computer chose:</h2>
         <div class="computer hide" id="computer-stone"></div>
@@ -57,11 +66,16 @@
       <div class="scroll">
         <marquee behavior="scroll" direction="left" scrollamount="20"
           ><a href="pop.html" class="dynamic-theme"
-            >🥳Please give a star to the github repository after enjoying!🥳</a
+            >🥳Please give a star to the github repository after
+            enjoying!🥳⚠️Warning! DO NOT CLICK ON ME!⚠️</a
           ></marquee
         >
       </div>
     </main>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
     <script src="script.js" defer></script>
   </body>
 </html>
