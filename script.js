@@ -115,9 +115,9 @@ window.onload = function () {
     } else {
       console.log("player wins");
       computerDefeatsPlayer = false;
-      playOnce();
       playerScore += 1;
       console.log("computerDefeatsPlayer" + computerDefeatsPlayer);
+      playOnce();
     }
     displayWinner(gameDraw);
     console.log(computerScore);
